@@ -1,26 +1,24 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
+// import { Router } from "./router/Router";
 import './App.css';
+import { PrimaryButton } from './components/atoms/button/PrimaryButton';
+import { Github } from './components/atoms/icon/Github';
+import { Instagram } from './components/atoms/icon/Instagram';
+import { Twitter } from './components/atoms/icon/Twitter';
+import { IconList } from './components/molecules/IconList';
+import { HeaderOnly } from './components/templates/HeaderOnly';
 
-function App() {
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <BrowserRouter>
+      <div className="App" >
+        <HeaderOnly/>
+        
+      </div>
+    // </BrowserRouter>
   );
 }
 
-export default App;
