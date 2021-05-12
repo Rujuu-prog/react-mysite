@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 
 export const Footer:React.FC = () => {
-    return <SFooter><Sp>advice orina.</Sp></SFooter>;
+    return <SFooter><Sp>advice orina</Sp></SFooter>;
 };
 
 const SFooter = styled.footer`
@@ -10,7 +10,7 @@ const SFooter = styled.footer`
     color: #fff;
     text-align: center;
     padding: 8px 0;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
 `;

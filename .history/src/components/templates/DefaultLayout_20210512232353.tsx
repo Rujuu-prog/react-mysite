@@ -1,6 +1,4 @@
 import React from "react";
-import styled from "styled-components";
-
 import { FooterOnly } from "./FooterOnly";
 import { HeaderOnly } from "./HeaderOnly";
 
@@ -10,16 +8,10 @@ type Props = {
 
 export const DefaultLayout: React.FC<Props> = ({children}) => {
     return (
-    <SContainer>
+    <div>
         <HeaderOnly/>
         {children}
         <FooterOnly/>
-    </SContainer>
+    </div>
     );
 };
-
-const SContainer = styled.div`
-    min-height: 100vh;
-    position: relative;
-    box-sizing: border-box;
-`;

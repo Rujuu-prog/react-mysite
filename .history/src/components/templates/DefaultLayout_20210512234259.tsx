@@ -21,5 +21,6 @@ export const DefaultLayout: React.FC<Props> = ({children}) => {
 const SContainer = styled.div`
     min-height: 100vh;
     position: relative;
-    box-sizing: border-box;
+    // padding-bottom: 60px;
+    // box-sizing: border-box;
 `;

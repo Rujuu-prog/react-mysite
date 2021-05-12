@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
-import { Router } from "./router/Router";
+// import { Router } from "./router/Router";
 import './App.css';
 import { PrimaryButton } from './components/atoms/button/PrimaryButton';
 import { Github } from './components/atoms/icon/Github';
@@ -15,9 +15,13 @@ import { HeaderOnly } from './components/templates/HeaderOnly';
 
 export default function App() {
   return (
-    <div className="App" >
-      <Router />
-    </div>
+    // <BrowserRouter>
+      <div className="App" >
+        <DefaultLayout>
+          <Top/>
+        </DefaultLayout>
+      </div>
+    // </BrowserRouter>
   );
 }
 

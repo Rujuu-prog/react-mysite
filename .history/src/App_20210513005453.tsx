@@ -15,9 +15,11 @@ import { HeaderOnly } from './components/templates/HeaderOnly';
 
 export default function App() {
   return (
-    <div className="App" >
-      <Router />
-    </div>
+    // <BrowserRouter>
+      <div className="App" >
+        <Router />
+      </div>
+    // </BrowserRouter>
   );
 }
 

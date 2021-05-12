@@ -10,16 +10,14 @@ type Props = {
 
 export const DefaultLayout: React.FC<Props> = ({children}) => {
     return (
-    <SContainer>
+    <div>
         <HeaderOnly/>
         {children}
         <FooterOnly/>
-    </SContainer>
+    </div>
     );
 };
 
 const SContainer = styled.div`
-    min-height: 100vh;
-    position: relative;
-    box-sizing: border-box;
+    position: relative
 `;
