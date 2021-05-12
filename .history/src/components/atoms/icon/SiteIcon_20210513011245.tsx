@@ -13,6 +13,6 @@ export const SiteIcon:React.FC = () => {
 }
 
 const SLink = styled(Link)`
+    margin: 0 8px;
     text-decoration: none;
-    color: #fff;
 `;

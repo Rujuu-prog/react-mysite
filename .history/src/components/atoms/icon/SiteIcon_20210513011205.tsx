@@ -1,7 +1,6 @@
 import { faCircleNotch } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 
 const IconStyle = {
     padding:"2",
@@ -13,6 +12,6 @@ export const SiteIcon:React.FC = () => {
 }
 
 const SLink = styled(Link)`
+    margin: 0 8px;
     text-decoration: none;
-    color: #fff;
 `;

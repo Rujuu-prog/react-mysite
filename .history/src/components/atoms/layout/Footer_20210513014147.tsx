@@ -17,6 +17,6 @@ const SFooter = styled.footer`
 
 const Sp = styled.p`
     display: flex;
-    justify-content: flex-end;
+    justify-content: start-flex;
     margin: 0;
 `;

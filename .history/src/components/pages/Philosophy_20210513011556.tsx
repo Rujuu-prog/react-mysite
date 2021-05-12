@@ -6,9 +6,7 @@ import me from '../atoms/img/me.svg'
 export const Philosophy:React.FC = () => {
     return(
         <SMainContainer>
-            <h1>Philosophy</h1>
-            <p>「ITを通じて、社会の発展を加速させる」</p>
-            <p>これが私の人生の目的です。</p>
+            <h1>自己理念</h1>
         </SMainContainer>
         
     );
@@ -16,12 +14,12 @@ export const Philosophy:React.FC = () => {
 
 const SMainContainer = styled.div`
     display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-grow: 1;
     background-color: #f5f5f5;
-    height: 90vh;
+    height: 100vh;
     h1 {
-        color: #282828;
+        color: #696969;
     }
 `;

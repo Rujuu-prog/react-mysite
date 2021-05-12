@@ -1,14 +1,13 @@
 import React from "react";
 import styled from "styled-components";
-import { DefaultLayout } from "../templates/DefaultLayout";
+
 import me from '../atoms/img/me.svg'
 
-export const Philosophy:React.FC = () => {
+export const SelfIntroduction:React.FC = () => {
     return(
         <SMainContainer>
-            <h1>Philosophy</h1>
-            <p>「ITを通じて、社会の発展を加速させる」</p>
-            <p>これが私の人生の目的です。</p>
+            <h1>Self introduction</h1>
+            <img src={me} alt="me"/>
         </SMainContainer>
         
     );
@@ -20,8 +19,14 @@ const SMainContainer = styled.div`
     justify-content: flex-start;
     align-items: center;
     background-color: #f5f5f5;
-    height: 90vh;
+    height: 100vh;
     h1 {
         color: #282828;
+    }
+    img {
+        width: 250px;
+        height: 250px;
+        border-radius: 50%;
+        background-position: left top;
     }
 `;

@@ -1,7 +1,6 @@
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
-import styled from "styled-components";
-
+import { NONAME } from "dns";
 
 const IconStyle = {
     padding:"2",
@@ -9,7 +8,7 @@ const IconStyle = {
 }
 
 export const Github:React.FC = () => {
-    return(<SButton href='https://github.com/Rujuu-prog'><FontAwesomeIcon style={IconStyle} icon={faGithub}></FontAwesomeIcon></SButton>);
+    return(<a href='https://github.com/Rujuu-prog'><FontAwesomeIcon style={IconStyle} icon={faGithub}></FontAwesomeIcon></a>);
 }
 
 const SButton = styled.a`

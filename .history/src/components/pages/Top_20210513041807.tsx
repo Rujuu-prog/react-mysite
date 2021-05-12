@@ -21,7 +21,7 @@ export const Top:React.FC = () => {
         <SMainContainer>
             
             <SContents>
-                <div className="ani"><Lottie options={defaultOptions} height={500} width={500} /></div>
+                <div><Lottie options={defaultOptions} height={500} width={500} /></div>
                 
                 {/* <h1>Rujuu</h1>
                 <h2>ポートフォリオ</h2> */}
@@ -48,38 +48,19 @@ const SContents = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    .ani {
-        position: relative;
-    }
-    .ani:before {
-        content: "Rujuu";
-        position: absolute;
-        top: 190px;
-        left: 190px;
+    // div {
+    //     position: sticky;
+    //     top: 20%;
+    //     left: 20%;
+    // }
+    h1 {
         font-size: 50px;
-        font-weight: 600;
+        margin: 0 0 15px 0;
     }
-    .ani:after {
-        content: "ポートフォリオ";
-        position: absolute;
-        top: 260px;
-        left: 150px;
-        color: #282828;
+    h2 {
         font-size: 30px;
-        font-weight: 500;
+        margin: 0;
     }
-    // h2 {
-    //     font-size: 30px;
-    //     margin: 0;
-    // }
-    // h1 {
-    //     font-size: 50px;
-    //     margin: 0 0 15px 0;
-    // }
-    // h2 {
-    //     font-size: 30px;
-    //     margin: 0;
-    // }
 `;
 
 const SImgContainer = styled.div`

@@ -7,8 +7,7 @@ export const Philosophy:React.FC = () => {
     return(
         <SMainContainer>
             <h1>Philosophy</h1>
-            <p>「ITを通じて、社会の発展を加速させる」</p>
-            <p>これが私の人生の目的です。</p>
+            <p>ITを通じて、社会の発展を加速させるのが私の人生の目的です。</p>
         </SMainContainer>
         
     );

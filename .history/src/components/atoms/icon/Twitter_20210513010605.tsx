@@ -8,7 +8,7 @@ const IconStyle = {
 }
 
 export const Twitter:React.FC = () => {
-    return(<SButton href='https://twitter.com/Rujuu2118'><FontAwesomeIcon style={IconStyle} icon={faTwitter}></FontAwesomeIcon></SButton>);
+    return(<SButton href='https://twitter.com/Rujuu2118'><FontAwesomeIcon style={IconStyle} icon={faTwitter}></FontAwesomeIcon>);</SButton>
 }
 
 const SButton = styled.a`
