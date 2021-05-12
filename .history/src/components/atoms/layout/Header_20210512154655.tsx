@@ -20,6 +20,6 @@ const SHeader = styled.header`
     background-color: black;
     color: #fff;
     text-align: center;
-    padding: 16px 24px;
+    padding: 8px 0;
 `;
 

@@ -1,13 +1,12 @@
 import styled from "styled-components";
-import { BaseButton } from "./BaseButton";
 
-export const PrimaryButton = (props:any) => {
+export const SecondaryButton = (props:any) => {
     const { children } = props;
     return <SButton>{children}</SButton>;
 };
 
-const SButton = styled(BaseButton)`
-    background-color: gray;
+const SButton = styled.a`
+    color: #fff;
     width: 10%;
     font-size: 10px;
     padding: 5px;

@@ -8,7 +8,6 @@ export const PrimaryButton = (props:any) => {
 
 const SButton = styled(BaseButton)`
     background-color: gray;
-    width: 10%;
+    width: 15%;
     font-size: 10px;
-    padding: 5px;
 `;

@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import { Header } from "../atoms/layout/Header";
-import { SecondaryButton } from "../atoms/button/SecondaryButton"
+import { PrimaryButton } from "../atoms/button/PrimaryButton"
 import { IconList } from "../molecules/IconList";
 
 type Props = {
@@ -14,15 +14,14 @@ export const HeaderOnly: React.FC<Props> = ({children}) => {
     return (
     <>
         <Header>
-            <SecondaryButton>自己理念</SecondaryButton>
-            <SecondaryButton>メッセージ</SecondaryButton>
+            <PrimaryButton>自己理念</PrimaryButton>
+            <PrimaryButton>メッセージ</PrimaryButton>
             <IconList/>
         </Header>
         {children}
     </>
     );
 };
-
 
 // const SLink = styled(Link)`
 //     margin: 0 8px;

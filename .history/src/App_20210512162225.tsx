@@ -3,6 +3,7 @@ import { BrowserRouter, Link, Switch, Route } from "react-router-dom";
 // import { Router } from "./router/Router";
 import './App.css';
 import { PrimaryButton } from './components/atoms/button/PrimaryButton';
+import { TestButton } from './components/atoms/button/TestButton';
 import { Github } from './components/atoms/icon/Github';
 import { Instagram } from './components/atoms/icon/Instagram';
 import { Twitter } from './components/atoms/icon/Twitter';
@@ -16,6 +17,7 @@ export default function App() {
     // <BrowserRouter>
       <div className="App" >
         <HeaderOnly/>
+        <TestButton/>
       </div>
     // </BrowserRouter>
   );

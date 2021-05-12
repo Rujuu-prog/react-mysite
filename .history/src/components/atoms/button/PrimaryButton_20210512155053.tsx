@@ -10,5 +10,4 @@ const SButton = styled(BaseButton)`
     background-color: gray;
     width: 10%;
     font-size: 10px;
-    padding: 5px;
 `;
