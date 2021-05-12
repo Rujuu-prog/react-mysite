@@ -16,6 +16,6 @@ const SLink = styled(Link)`
     text-decoration: none;
     color: #fff;
     :hover {
-        color: #282828;
+        color: blue;
     }
 `;

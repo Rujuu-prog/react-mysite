@@ -10,9 +10,7 @@ const SButton = styled.a`
     width: 10%;
     font-size: 14px;
     padding: 5px;
-    border-radius: 10000px;
     :hover {
-        background-color: #f5f5f5;
-        color: #282828;
+        color: #f5f5f5;
     }
 `;

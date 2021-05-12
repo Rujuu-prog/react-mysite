@@ -8,11 +8,10 @@ export const SecondaryButton = (props:any) => {
 const SButton = styled.a`
     color: #fff;
     width: 10%;
+    height: 100%
     font-size: 14px;
     padding: 5px;
-    border-radius: 10000px;
     :hover {
         background-color: #f5f5f5;
-        color: #282828;
     }
 `;
