@@ -1,10 +1,10 @@
 import styled from "styled-components";
 
 export const Footer = () => {
-    return <SFooter><Sp>advice orina</Sp></SFooter>;
+    return <SFooter>advice orina</SFooter>;
 };
 
-const SFooter = styled.footer`
+const SFooter = styled.header`
     background-color: black;
     color: #fff;
     text-align: center;
@@ -12,8 +12,4 @@ const SFooter = styled.footer`
     position: fixed;
     bottom: 0;
     width: 100%;
-`;
-
-const Sp = styled.p`
-    margin: 0;
 `;

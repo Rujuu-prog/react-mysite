@@ -6,7 +6,6 @@ import { Header } from "../atoms/layout/Header";
 import { SecondaryButton } from "../atoms/button/SecondaryButton"
 import { IconList } from "../molecules/IconList";
 import { SiteIcon } from "../atoms/icon/SiteIcon";
-import { NaviBar } from "../atoms/layout/NaviBar";
 
 type Props = {
     children?: React.ReactNode;
@@ -17,7 +16,9 @@ export const HeaderOnly: React.FC<Props> = ({children}) => {
     <>
         <Header>
             <SiteIcon/>
-            <NaviBar/>
+            <SecondaryButton>自己理念</SecondaryButton>
+            <SecondaryButton>メッセージ</SecondaryButton>
+            <IconList/>
         </Header>
         {children}
     </>

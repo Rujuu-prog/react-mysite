@@ -13,10 +13,13 @@ export const Header: React.FC<Props> = ({children}) => {
 
 const SHeader = styled.header`
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    height: 10%;
+    // width: 100%;
+    height: 20%;
     background-color: black;
     color: #fff;
+    text-align: center;
     padding: 16px 24px;
 `;
 

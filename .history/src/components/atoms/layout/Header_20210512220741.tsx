@@ -12,9 +12,8 @@ export const Header: React.FC<Props> = ({children}) => {
 };
 
 const SHeader = styled.header`
-    display: flex;
-    align-items: center;
-    height: 10%;
+    // width: 100%;
+    height: 20%;
     background-color: black;
     color: #fff;
     padding: 16px 24px;

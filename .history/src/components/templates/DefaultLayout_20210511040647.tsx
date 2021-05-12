@@ -1,6 +1,6 @@
 import React from "react";
-import { FooterOnly } from "./FooterOnly";
-import { HeaderOnly } from "./HeaderOnly";
+import { Footer } from "../atoms/layout/Footer";
+import { Header } from "../atoms/layout/Header";
 
 type Props = {
     children?: React.ReactNode;
@@ -9,9 +9,9 @@ type Props = {
 export const DefaultLayout: React.FC<Props> = ({children}) => {
     return (
     <>
-        <HeaderOnly/>
+        <Header />
         {children}
-        <FooterOnly/>
+        <Footer />
     </>
     );
 };

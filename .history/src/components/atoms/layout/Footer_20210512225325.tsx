@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Footer = () => {
-    return <SFooter><Sp>advice orina</Sp></SFooter>;
+    return <SFooter><p>advice orina</p></SFooter>;
 };
 
 const SFooter = styled.footer`
@@ -12,6 +12,7 @@ const SFooter = styled.footer`
     position: fixed;
     bottom: 0;
     width: 100%;
+    height: 10%;
 `;
 
 const Sp = styled.p`
