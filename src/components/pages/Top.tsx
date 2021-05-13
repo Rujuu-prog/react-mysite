@@ -22,9 +22,6 @@ export const Top:React.FC = () => {
             
             <SContents>
                 <div className="ani"><Lottie options={defaultOptions} height={500} width={500} /></div>
-                
-                {/* <h1>Rujuu</h1>
-                <h2>ポートフォリオ</h2> */}
             </SContents>
             <SImgContainer>
                 <img src={me} alt='me'/>
@@ -42,7 +39,6 @@ const SMainContainer = styled.div`
 `;
 
 const SContents = styled.div`
-    // position: relative;
     width: 50%;
     display: flex;
     flex-direction: column;
@@ -68,18 +64,6 @@ const SContents = styled.div`
         font-size: 30px;
         font-weight: 500;
     }
-    // h2 {
-    //     font-size: 30px;
-    //     margin: 0;
-    // }
-    // h1 {
-    //     font-size: 50px;
-    //     margin: 0 0 15px 0;
-    // }
-    // h2 {
-    //     font-size: 30px;
-    //     margin: 0;
-    // }
 `;
 
 const SImgContainer = styled.div`

@@ -10,8 +10,8 @@ export const SelfIntroduction:React.FC = () => {
             <img src={me} alt="me"/>
             <h2>Rujuu</h2>
             <h3>Age: 21</h3>
+            <p></p>
         </SMainContainer>
-        
     );
 };
 
