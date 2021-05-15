@@ -10,7 +10,7 @@ import animationData from "../atoms/img/data.json";
 
 export const Top:React.FC = () => {
     const defaultOptions = {
-        loop: true,
+        loop: false,
         autoplay: true,
         animationData,
         rendererSettings: {
