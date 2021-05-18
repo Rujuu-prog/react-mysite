@@ -1,6 +1,6 @@
 export interface BlogType {
     id: number;
-    img: File | null;
+    img: string;
     text: string;
     title: string;
 };
