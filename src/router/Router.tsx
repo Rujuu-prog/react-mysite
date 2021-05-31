@@ -1,13 +1,15 @@
 import React from "react";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
+import { BlogType } from "../types/type";
 import { Philosophy } from "../components/pages/Philosophy";
 import { SelfIntroduction } from "../components/pages/SelfIntroduction";
 import { Top } from "../components/pages/Top";
 import { Blog } from "../components/pages/Blog";
 import { DefaultLayout } from "../components/templates/DefaultLayout";
 
-export const Router:React.FC = () => {
+export const Router:React.FC<Omit<BlogType, "id">> = (props) => {
+    const {img, text, title} = props;
     return(
         <BrowserRouter>
             <Switch>
