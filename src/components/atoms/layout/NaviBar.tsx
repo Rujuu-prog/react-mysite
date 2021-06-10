@@ -14,7 +14,8 @@ export const NaviBar: React.FC<Props> = ({children}) => {
     <>
         <SNavi>
             <li><SLink to="/selfintroduction"><SecondaryButton>Self introduction</SecondaryButton></SLink></li>
-            <Slist><SLink to="/philosophy"><SecondaryButton>Philosophy</SecondaryButton></SLink></Slist>
+            <li><SLink to="/philosophy"><SecondaryButton>Philosophy</SecondaryButton></SLink></li>
+            <Slist><SLink to="/blog"><SecondaryButton>Blog</SecondaryButton></SLink></Slist>
             <li><IconList/></li>
         </SNavi>
         {children}
