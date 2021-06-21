@@ -7,6 +7,7 @@ import { Top } from "../components/pages/Top";
 import { Blog } from "../components/pages/Blog";
 import { DefaultLayout } from "../components/templates/DefaultLayout";
 import { Calendar } from "../components/pages/Calendar";
+import { Slide } from "../components/pages/Slide";
 
 export const Router:React.FC = () => {
     return(
@@ -35,6 +36,11 @@ export const Router:React.FC = () => {
                 <Route path="/calendar">
                 <DefaultLayout>
                     <Calendar />
+                </DefaultLayout>
+                </Route>
+                <Route path="/slider">
+                <DefaultLayout>
+                    <Slide />
                 </DefaultLayout>
                 </Route>
             </Switch>
