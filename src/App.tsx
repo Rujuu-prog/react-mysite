@@ -1,10 +1,9 @@
 import { Router } from "./router/Router";
-import './App.css';
+import "./App.css";
 import { useEffect, useState } from "react";
-import axios from 'axios';
+import axios from "axios";
 
 import { BlogType } from "./types/type";
-
 
 export default function App() {
   // const [blogs, setblogs] = useState<Array<BlogType>>([]);
@@ -20,10 +19,10 @@ export default function App() {
   // };
   // onClickFetchData();
   // }, [])
+
   return (
-    <div className="App" >
+    <div className="App">
       <Router />
     </div>
   );
 }
-
