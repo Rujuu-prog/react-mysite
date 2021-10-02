@@ -1,4 +1,4 @@
-export interface BlogType {
+export interface ProductType {
     id: number;
     img: string;
     text: string;

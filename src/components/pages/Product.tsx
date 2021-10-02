@@ -2,13 +2,13 @@ import React, { useEffect, useState } from "react";
 import styled from "styled-components";
 import axios from "axios";
 
-import { BlogType } from "../../types/type";
-import { BlogBody } from "../organism/BlogBody";
+import { ProductType } from "../../types/type";
+import { ProductBody } from "../organism/ProductBody";
 
 const apiUrl = process.env.REACT_APP_DEV_API_URL;
 
-export const Blog: React.FC = () => {
-  const [blogs, setblogs] = useState<Array<BlogType>>([]);
+export const Product: React.FC = () => {
+  const [blogs, setblogs] = useState<Array<ProductType>>([]);
   //djangoのurlをenvから取得
   useEffect(() => {
     const onClickFetchData = () => {
@@ -17,7 +17,7 @@ export const Blog: React.FC = () => {
           ? "http://localhost:8000"
           : window.location.origin;
       axios
-        .get<Array<BlogType>>(api_url + `/api/blog/`, {
+        .get<Array<ProductType>>(api_url + `/api/blog/`, {
           headers: {
             "Content-Type": "application/json",
           },
@@ -32,7 +32,7 @@ export const Blog: React.FC = () => {
   return (
     <SMainContainer>
       {blogs.map((blog: any) => (
-        <BlogBody
+        <ProductBody
           key={blog.id}
           img={blog.img}
           text={blog.text}
