@@ -1,30 +1,32 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 
-import { Header } from "../atoms/layout/Header";
-import { SecondaryButton } from "../atoms/button/SecondaryButton"
 import { IconList } from "../molecules/IconList";
-import { SiteIcon } from "../atoms/icon/SiteIcon";
 import { NaviBar } from "../atoms/layout/NaviBar";
 
 type Props = {
-    children?: React.ReactNode;
+  children?: React.ReactNode;
 };
 
-export const HeaderOnly: React.FC<Props> = ({children}) => {
-    return (
+export const HeaderOnly: React.FC<Props> = ({ children }) => {
+  return (
     <>
-        <Header>
-            <SiteIcon/>
-            <NaviBar/>
-        </Header>
-        {children}
+      <SHeader>
+        {/* <SiteIcon /> */}
+        <NaviBar />
+        <IconList />
+      </SHeader>
+      {/* {children} */}
     </>
-    );
+  );
 };
 
-
-// const SLink = styled(Link)`
-//     margin: 0 8px;
-// `;
+const SHeader = styled.header`
+  width: 100%;
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+  height: 50px;
+  //   padding: 5px 5px;
+`;

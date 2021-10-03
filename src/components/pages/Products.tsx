@@ -1,16 +1,14 @@
 import React, { useEffect, useState } from "react";
 import styled from "styled-components";
-import { useParams } from "react-router-dom";
 import axios from "axios";
 
 import { ProductsType } from "../../types/type";
-import { ProductBody } from "../organism/ProductBody";
+import { ProductsBody } from "../organism/ProductsBody";
 
-// type PageProps = {} & RouteComponentProps<{ id: string }>;
+const apiUrl = process.env.REACT_APP_DEV_API_URL;
 
-export const Product: React.FC = () => {
-  const [product, setProducts] = useState<ProductsType>();
-  const { id } = useParams<{ id: string }>();
+export const Products: React.FC = () => {
+  const [blogs, setblogs] = useState<Array<ProductsType>>([]);
   //djangoのurlをenvから取得
   useEffect(() => {
     const onClickFetchData = () => {
@@ -18,41 +16,43 @@ export const Product: React.FC = () => {
         window.location.origin === "http://localhost:3000"
           ? "http://localhost:8000"
           : window.location.origin;
-
       axios
-        .get<ProductsType>(api_url + `/api/blog/` + id, {
+        .get<Array<ProductsType>>(api_url + `/api/blog/`, {
           headers: {
             "Content-Type": "application/json",
           },
         })
         .then((res) => {
           console.log(res.data);
-          setProducts(res.data);
+          setblogs(res.data);
         });
     };
     onClickFetchData();
   }, []);
   return (
     <SMainContainer>
-      <ProductBody
-        key={product?.id}
-        img={product?.img}
-        title={product?.title}
-        content={product?.content}
-      />
+      {console.log(blogs)}
+      {blogs.map((blog: any) => (
+        <ProductsBody
+          id={blog.id}
+          img={blog.img}
+          text={blog.text}
+          title={blog.title}
+          content={blog.content}
+        />
+      ))}
     </SMainContainer>
   );
 };
 
 const SMainContainer = styled.div`
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  // flex-wrap: wrap;
-  // flex-direction: row;
+  flex-wrap: wrap;
+  flex-direction: row;
   // justify-content: flex-start;
-  // align-content: flex-start;
-  // align-items: stretch;
+  justify-content: center;
+  align-content: flex-start;
+  align-items: stretch;
   h1 {
     color: #282828;
   }

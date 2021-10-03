@@ -4,18 +4,23 @@ import styled from "styled-components";
 import { Link } from "react-router-dom";
 
 const IconStyle = {
-    padding:"2",
-    fontsize:"50"
-}
+  padding: "2",
+  fontsize: "50",
+};
 
-export const SiteIcon:React.FC = () => {
-    return(<SLink to="/"><FontAwesomeIcon style={IconStyle} icon={faCircleNotch}></FontAwesomeIcon></SLink>);
-}
+export const SiteIcon: React.FC = () => {
+  return (
+    <SLink to="/">
+      <FontAwesomeIcon style={IconStyle} icon={faCircleNotch}></FontAwesomeIcon>
+    </SLink>
+  );
+};
 
 const SLink = styled(Link)`
-    text-decoration: none;
-    color: #fff;
-    :hover {
-        color: #282828;
-    }
+  text-decoration: none;
+  color: #fff;
+  margin-right: 20px;
+  :hover {
+    color: #282828;
+  }
 `;

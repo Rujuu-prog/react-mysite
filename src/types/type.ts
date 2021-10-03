@@ -1,6 +1,7 @@
-export interface ProductType {
-    id: number;
-    img: string;
-    text: string;
-    title: string;
-};
+export interface ProductsType {
+  id?: number;
+  img?: string;
+  text?: string;
+  content?: string;
+  title?: string;
+}

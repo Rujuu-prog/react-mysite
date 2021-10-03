@@ -3,18 +3,26 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import styled from "styled-components";
 
 const IconStyle = {
-    padding:"2",
-    fontsize:"50"
-}
+  padding: "2",
+  fontsize: "50",
+};
 
-export const Instagram:React.FC = () => {
-    return(<SButton href='https://www.instagram.com/rujuuuuuu/'><FontAwesomeIcon style={IconStyle} icon={faInstagram}></FontAwesomeIcon></SButton>);
-}
+export const Instagram: React.FC = () => {
+  return (
+    <SButton
+      href="https://www.instagram.com/rujuuuuuu/"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <FontAwesomeIcon style={IconStyle} icon={faInstagram}></FontAwesomeIcon>
+    </SButton>
+  );
+};
 
 const SButton = styled.a`
-    text-decoration: none;
-    color: #fff;
-    :hover {
-        color: #282828;
-    }
+  text-decoration: none;
+  color: #fff;
+  :hover {
+    color: #282828;
+  }
 `;

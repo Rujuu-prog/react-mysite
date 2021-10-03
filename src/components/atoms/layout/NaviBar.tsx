@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 import { SecondaryButton } from "../button/SecondaryButton";
-import { IconList } from "../../molecules/IconList";
+import { SiteIcon } from "../../atoms/icon/SiteIcon";
 
 type Props = {
   children?: React.ReactNode;
@@ -11,8 +11,9 @@ type Props = {
 
 export const NaviBar: React.FC<Props> = ({ children }) => {
   return (
-    <>
+    <SContainer>
       <SNavi>
+        <SiteIcon />
         <li>
           <SLink to="/selfintroduction">
             <SecondaryButton>Self introduction</SecondaryButton>
@@ -24,18 +25,22 @@ export const NaviBar: React.FC<Props> = ({ children }) => {
           </SLink>
         </li>
         <Slist>
-          <SLink to="/product">
-            <SecondaryButton>Product</SecondaryButton>
+          <SLink to="/products">
+            <SecondaryButton>Products</SecondaryButton>
           </SLink>
         </Slist>
-        <li>
+        {/* <li>
           <IconList />
-        </li>
+        </li> */}
       </SNavi>
-      {children}
-    </>
+      {/* <IconList /> */}
+    </SContainer>
   );
 };
+
+const SContainer = styled.div`
+  display: flex;
+`;
 
 const SNavi = styled.ul`
   display: flex;
@@ -44,14 +49,15 @@ const SNavi = styled.ul`
   width: 100%;
   height: 100%;
   margin: 0;
-  background-color: black;
+  // background-color: black;
   list-style: none;
   color: #fff;
   text-align: center;
+  padding-left: 20px;
 `;
 
 const Slist = styled.li`
-  margin-right: auto;
+  // margin-right: 50%;
 `;
 
 const SLink = styled(Link)`

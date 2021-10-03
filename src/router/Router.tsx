@@ -4,6 +4,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Philosophy } from "../components/pages/Philosophy";
 import { SelfIntroduction } from "../components/pages/SelfIntroduction";
 import { Top } from "../components/pages/Top";
+import { Products } from "../components/pages/Products";
 import { Product } from "../components/pages/Product";
 import { DefaultLayout } from "../components/templates/DefaultLayout";
 
@@ -26,7 +27,12 @@ export const Router: React.FC = () => {
             <Philosophy />
           </DefaultLayout>
         </Route>
-        <Route path="/product">
+        <Route path="/products">
+          <DefaultLayout>
+            <Products />
+          </DefaultLayout>
+        </Route>
+        <Route path="/product/:id">
           <DefaultLayout>
             <Product />
           </DefaultLayout>
