@@ -31,5 +31,5 @@ const SContainer = styled.div`
 const SMainContainer = styled.div`
   padding-top: 50px;
   background-color: #f5f5f5;
-  min-height: 90vh;
+  // min-height: 90vh;
 `;

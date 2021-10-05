@@ -48,11 +48,7 @@ const SMainContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  // flex-wrap: wrap;
-  // flex-direction: row;
-  // justify-content: flex-start;
-  // align-content: flex-start;
-  // align-items: stretch;
+  min-height: calc(100vh - 83px);
   h1 {
     color: #282828;
   }

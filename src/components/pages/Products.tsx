@@ -49,8 +49,8 @@ const SMainContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  // justify-content: flex-start;
   justify-content: center;
+  min-height: calc(100vh - 83px);
   align-content: flex-start;
   align-items: stretch;
   h1 {

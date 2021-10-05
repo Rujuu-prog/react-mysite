@@ -33,6 +33,7 @@ const SMainContainer = styled.div`
   flex-direction: row;
   justify-content: space-around;
   flex-grow: 1;
+  height: calc(100vh - 83px);
 `;
 
 const SContents = styled.div`
@@ -66,7 +67,7 @@ const SContents = styled.div`
 const SImgContainer = styled.div`
   width: 50%;
   img {
-    height: 90vh;
+    height: calc(100vh - 83px);
     width: 100%;
     object-fit: cover;
   }
