@@ -7,6 +7,7 @@ import { Top } from "../components/pages/Top";
 import { Products } from "../components/pages/Products";
 import { Product } from "../components/pages/Product";
 import { DefaultLayout } from "../components/templates/DefaultLayout";
+import { Page404 } from "../components/pages/Page404";
 
 export const Router: React.FC = () => {
   return (
@@ -35,6 +36,11 @@ export const Router: React.FC = () => {
         <Route path="/product/:id">
           <DefaultLayout>
             <Product />
+          </DefaultLayout>
+        </Route>
+        <Route path="*">
+          <DefaultLayout>
+            <Page404 />
           </DefaultLayout>
         </Route>
       </Switch>
