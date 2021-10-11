@@ -27,6 +27,9 @@ const SContainer = styled.div`
   padding: 40px 40px 20px 40px;
   width: 660px;
   height: 100%;
+  p {
+    text-align: left;
+  }
 `;
 
 const SH = styled.h1`
