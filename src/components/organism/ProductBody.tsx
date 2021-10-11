@@ -30,6 +30,9 @@ const SContainer = styled.div`
   p {
     text-align: left;
   }
+  h4 > img {
+    border-radius: 10px;
+  }
 `;
 
 const SH = styled.h1`
