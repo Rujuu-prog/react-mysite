@@ -30,7 +30,10 @@ const SContainer = styled.div`
   p {
     text-align: left;
   }
-  h4 > img {
+  p > img {
+    text-align: center;
+  }
+  h4 > img, p > img {
     border-radius: 10px;
   }
 `;
