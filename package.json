@@ -17,7 +17,7 @@
     "@types/react-html-parser": "^2.0.2",
     "@types/react-router-dom": "^5.1.7",
     "@types/styled-components": "^5.1.9",
-    "axios": "^0.21.1",
+    "axios": "^1.8.2",
     "html-react-parser": "^1.4.0",
     "mime": "^1.6.0",
     "path-starts-with": "^2.0.0",
